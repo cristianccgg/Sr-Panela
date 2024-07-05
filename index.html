@@ -125,13 +125,15 @@
       </nav>
 
       <div class="p-10 flex flex-col gap-10">
-        <div id="hero" class="relative p-5 bg-cover bg-no-repeat w-full h-96 rounded-xl flex flex-col gap-3 justify-end">
+        <div id="hero" class="relative p-5 bg-cover bg-no-repeat w-full min-h-96 rounded-xl flex flex-col gap-3 justify-end">
           <div class="absolute inset-0 bg-black opacity-50 rounded-xl"></div> <!-- Capa para el filtro -->
-          <h1 class="z-10 relative text-white text-4xl font-bold">Vive la experiencia de ser panelero por un día</h1>
+          <h1 class="z-10 relative text-white text-4xl font-bold line">Vive la experiencia de ser <span class="before:block before:absolute before:-inset-0.5 before:-skew-y-3 before:bg-green-500 relative inline-block">
+            <span class="relative text-white">panelero</span>
+          </span> por un día</h1>
           <p class="z-10 relative text-white font-bold">"Sumérgete en la tradición panelera colombiana,
           vive un día como panelero con guía experto y
           disfruta de un delicioso almuerzo."</p>
-          <button class="z-10 relative bg-1Green text-white rounded-xl p-2 hover:bg-black hover:text-white font-bold">Reserva ahora</button>
+          <button class="z-10 relative bg-green-500 text-white rounded-xl p-2 hover:bg-1Green hover:text-white font-bold">Reserva ahora</button>
         </div>
       </div>
       
@@ -168,7 +170,7 @@
             </div>
             <!-- Slider controls -->
             <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-56 px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-1Green group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                     </svg>
@@ -176,7 +178,7 @@
                 </span>
             </button>
             <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-56  px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-1Green group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                     </svg>

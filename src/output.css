@@ -732,6 +732,10 @@ video {
   z-index: 30;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -971,6 +975,10 @@ video {
 
 .min-h-full {
   min-height: 100%;
+}
+
+.min-h-96 {
+  min-height: 24rem;
 }
 
 .w-6 {
@@ -2166,6 +2174,11 @@ video {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-green-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
@@ -2958,6 +2971,67 @@ video {
   }
 }
 
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:-inset-1::before {
+  content: var(--tw-content);
+  inset: -0.25rem;
+}
+
+.before\:-inset-0::before {
+  content: var(--tw-content);
+  inset: -0px;
+}
+
+.before\:-inset-0\.5::before {
+  content: var(--tw-content);
+  inset: -0.125rem;
+}
+
+.before\:block::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:-skew-y-3::before {
+  content: var(--tw-content);
+  --tw-skew-y: -3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:-skew-y-1::before {
+  content: var(--tw-content);
+  --tw-skew-y: -1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:-skew-y-2::before {
+  content: var(--tw-content);
+  --tw-skew-y: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:bg-pink-500::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
+.before\:bg-green-500::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.before\:bg-orange-400::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
 .before\:brightness-50::before {
   content: var(--tw-content);
   --tw-brightness: brightness(.5);
@@ -3132,6 +3206,11 @@ video {
 
   .dark\:bg-gray-800\/50 {
     background-color: rgb(31 41 55 / 0.5);
+  }
+
+  .dark\:bg-1Green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(170 208 165 / var(--tw-bg-opacity));
   }
 
   .dark\:text-gray-800 {
