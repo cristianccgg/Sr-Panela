@@ -5,6 +5,8 @@ hamBtn.addEventListener("click", () => {
   dropdown.classList.toggle("hidden");
 });
 
+// Carrusel Fotos JavaScript
+
 const carouselItems = document.querySelectorAll("[data-carousel-item]");
 const indicators = document.querySelectorAll("[data-carousel-slide-to]");
 const prevButton = document.querySelector("[data-carousel-prev]");
@@ -47,3 +49,66 @@ nextButton.addEventListener("click", () => {
 });
 
 showSlide(currentIndex);
+
+// Carrusel de Fotos termina
+
+// Carrusel de testimonios empieza
+
+const carouselTestimoniosItems = document.querySelectorAll(
+  "[data-testimonio-item]"
+);
+const testimoniosIndicators = document.querySelectorAll(
+  "[data-testimonio-carousel-slide-to]"
+);
+const testimoniosPrevButton = document.querySelector(
+  "[data-testimonio-carousel-prev]"
+);
+const testimoniosNextButton = document.querySelector(
+  "[data-testimonio-carousel-next]"
+);
+let testimoniosCurrentIndex = 0;
+
+function showTestimonioSlide(index) {
+  if (index < 0 || index >= carouselTestimoniosItems.length) {
+    return;
+  }
+
+  carouselTestimoniosItems.forEach((item, i) => {
+    item.classList.toggle("hidden", i !== index);
+  });
+  testimoniosIndicators.forEach((indicator, i) => {
+    if (i === index) {
+      indicator.setAttribute("aria-current", "true");
+      indicator.classList.add("bg-white");
+      indicator.classList.remove("bg-white/50");
+    } else {
+      indicator.setAttribute("aria-current", "false");
+      indicator.classList.remove("bg-white");
+      indicator.classList.add("bg-white/50");
+    }
+  });
+  testimoniosCurrentIndex = index;
+}
+
+testimoniosIndicators.forEach((indicator, index) => {
+  indicator.addEventListener("click", () => {
+    showTestimonioSlide(index);
+  });
+});
+
+testimoniosPrevButton.addEventListener("click", () => {
+  const nextTestIndex =
+    (testimoniosCurrentIndex - 1 + carouselTestimoniosItems.length) %
+    carouselTestimoniosItems.length;
+  showTestimonioSlide(nextTestIndex);
+});
+
+testimoniosNextButton.addEventListener("click", () => {
+  const nextTestIndex =
+    (testimoniosCurrentIndex + 1) % carouselTestimoniosItems.length;
+  showTestimonioSlide(nextTestIndex);
+});
+
+showTestimonioSlide(testimoniosCurrentIndex);
+
+// Carrusel de testimonios termina

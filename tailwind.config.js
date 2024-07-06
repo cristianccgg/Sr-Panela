@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         "1Green": "#AAD0A5",
       },
+      fontSize: {
+        xxs: "0.5rem",
+      },
     },
   },
   plugins: [],

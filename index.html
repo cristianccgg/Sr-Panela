@@ -168,48 +168,151 @@
 
         <!-- Findel hero
          
-        Inicio del testimonio -->
+        Inicio del carrusel de testimonio -->
 
         <div
-          class="flex flex-col items-center bg-green-500 p-5 rounded-xl gap-2"
+          id="testimonio-carousel"
+          class="h-60 md:h-full overflow-hidden relative rounded-lg bg-green-500"
         >
-          <img
-            class="rounded-full w-20 h-20 object-cover"
-            src="/images/IMG_0727-2-2.jpg"
-            alt="avatar-testimonio"
-          />
-          <div>
-            <i
-              class="bx bxs-star"
-              style="color: rgb(192, 192, 0); border: 4px black"
-            ></i>
-            <i
-              class="bx bxs-star"
-              style="color: rgb(192, 192, 0); border: 4px black"
-            ></i>
-            <i
-              class="bx bxs-star"
-              style="color: rgb(192, 192, 0); border: 4px black"
-            ></i>
-            <i
-              class="bx bxs-star"
-              style="color: rgb(192, 192, 0); border: 4px black"
-            ></i>
-            <i
-              class="bx bxs-star"
-              style="color: rgb(192, 192, 0); border: 4px black"
-            ></i>
+          <div
+            class="relative rounded-lg md:grid md:grid-cols-4 md:gap-3 sm:justify-between h-full"
+          >
+            <!-- Item 1 -->
+            <div
+              class="flex flex-col items-center py-5 px-12 rounded-xl gap-2 relative"
+              data-testimonio-item
+            >
+              <i
+                class="bx bxs-quote-right absolute text-7xl top-3 right-8"
+                style="color: rgb(183, 255, 171); opacity: 50%"
+              ></i>
+              <img
+                class="rounded-full w-16 h-16 object-cover"
+                src="/images/IMG_0727-2-2.jpg"
+                alt="avatar-testimonio"
+              />
+              <div>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+              </div>
+              <p class="text-xxs text-center text-white">
+                Descubrí la auténtica tradición panelera colombiana gracias a
+                Señor Panela y no podría estar más impresionado. Desde el
+                momento en que llegamos, fuimos recibidos con una calidez que
+                refleja la pasión por su historia y cultura.
+              </p>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden flex flex-col items-center py-5 px-12 rounded-xl gap-2 relative"
+              data-testimonio-item
+            >
+              <i
+                class="bx bxs-quote-right absolute text-7xl top-3 right-8"
+                style="color: rgb(183, 255, 171); opacity: 50%"
+              ></i>
+              <img
+                class="rounded-full w-16 h-16 object-cover"
+                src="/images/avatar-rizky-hasanuddin.webp"
+                alt="avatar-testimonio"
+              />
+              <div>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+                <i class="bx bxs-star" style="color: rgb(255, 255, 0)"></i>
+              </div>
+              <p class="text-xxs text-center text-white">
+                Descubrí la auténtica tradición panelera colombiana gracias a
+                Señor Panela y no podría estar más impresionado. Desde el
+                momento en que llegamos, fuimos recibidos con una calidez que
+                refleja la pasión por su historia y cultura.
+              </p>
+            </div>
           </div>
-          <p class="text-xs text-center text-white">
-            Descubrí la auténtica tradición panelera colombiana gracias a Señor
-            Panela y no podría estar más impresionado. Desde el momento en que
-            llegamos, fuimos recibidos con una calidez que refleja la pasión por
-            su historia y cultura. El tour guiado nos sumergió en cada paso del
-            proceso de producción de la panela, con explicaciones detalladas que
-            hicieron que todo fuera fácil de entender, incluso para los que no
-            estábamos familiarizados con el tema.
-          </p>
+
+          <!-- Slider indicators -->
+          <div
+            class="md:hidden absolute z-30 flex justify-center bottom-5 left-1/2 transform -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full bg-white/50"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-tetimonio-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full bg-white/50"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-testimonio-carousel-slide-to="1"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="md:hidden absolute top-1/2 left-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
+            data-testimonio-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none transform -translate-y-1/2"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="md:hidden absolute top-1/2 right-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
+            data-testimonio-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none transform -translate-y-1/2"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
         </div>
+
+        <!--Carrusel de testimonios termina
+        
+        
+        Carrousel de fotos empieza-->
 
         <div
           id="default-carousel"
