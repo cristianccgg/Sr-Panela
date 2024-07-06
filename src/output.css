@@ -3322,6 +3322,10 @@ video {
     min-height: 20rem;
   }
 
+  .md\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .md\:w-32 {
     width: 8rem;
   }
