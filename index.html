@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="/src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
-  <body class="flex justify-center">
-    <main class=" bg-1Green bg-opacity-50 relative h-screen flex flex-col justify-center">
-      <nav class="bg-white absolute top-0 w-full">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex items-center h-20">
-          <div class="relative flex w-full h-full items-center ">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden ">
+  <body>
+    <main class="bg-1Green bg-opacity-50 relative">
+      <nav class="bg-white">
+        <div
+          class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex items-center h-20"
+        >
+          <div class="relative flex w-full h-full items-center">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <!-- Mobile menu button-->
-              <button id="ham-btn"
+              <button
+                id="ham-btn"
                 type="button"
                 class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
@@ -22,13 +25,9 @@
               >
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
-                <!--
-                      Icon when menu is closed.
-          
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
+                <!-- Icon when menu is closed. -->
                 <svg
-                  class="block h-6 w-6 "
+                  class="block h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -41,11 +40,7 @@
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>
-                <!--
-                      Icon when menu is open.
-          
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
+                <!-- Icon when menu is open. -->
                 <svg
                   class="hidden h-6 w-6"
                   fill="none"
@@ -63,7 +58,7 @@
               </button>
             </div>
             <div
-              class="flex flex-1 items-center justify-center  sm:items-stretch sm:justify-start"
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
             >
               <div class="flex flex-shrink-0 ms-auto sm:ms-0">
                 <img
@@ -81,7 +76,7 @@
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
                     href="#"
-                    class="rounded-lg border-2 border-1Green px-3 py-2 text-sm font-bold text-1Green hover:bg-1Green hover:text-white "
+                    class="rounded-lg border-2 border-1Green px-3 py-2 text-sm font-bold text-1Green hover:bg-1Green hover:text-white"
                     aria-current="page"
                     >Contactanos</a
                   >
@@ -97,8 +92,6 @@
                   >
                 </div>
               </div>
-            </div>
-            
             </div>
           </div>
         </div>
@@ -120,94 +113,195 @@
             >
             <a
               href="#"
-              class="block rounded-md border-2 border-green-500 px-3 py-2 text-white  font-medium bg-green-500  hover:bg-black hover:border-black hover:text-white"
+              class="block rounded-md border-2 border-green-500 px-3 py-2 text-white font-medium bg-green-500 hover:bg-black hover:border-black hover:text-white"
               >Reservas</a
             >
-           
           </div>
         </div>
       </nav>
 
-      <!-- Fin del navBar
+      <!-- Fin del navBar -->
 
-
-      Inicio del contenido-->
-
-      <div class="md:px-20 px-5 flex gap-5 flex-col justify-center border-4 border-red-500 mt-5">
-        <div class="flex flex-col gap-10 rounded-xl ">
-          <div id="hero" class="relative rounded-xl flex flex-col justify-end sm:gap-5">
-              <img class="brightness-75  rounded-xl  object-cover w-full" src="/images/Hero.jpg" alt="hero">
-              <div class="absolute p-5 flex flex-col gap-5">
-                  <h1 class="z-10 relative text-white text-xl font-bold line sm:text-3xl md:text-4xl lg:text-6xl">Vive la experiencia de ser <span class="before:block before:absolute before:-inset-0.5 before:-skew-y-3 before:bg-green-500 relative inline-block">
-                      <span class="relative text-white">panelero</span>
-                  </span> por un día!</h1>
-                  <p class="z-10 relative text-white font-semibold text-xs sm:text-2xl md:text-3xl lg:text-4xl sm:font-normal">"Sumérgete en la tradición panelera colombiana,
-                  vive un día como panelero con guía experto y
-                  disfruta de un delicioso almuerzo."</p>
-                  <button class="z-10 relative bg-green-500 text-xs sm:text-2xl md:text-3xl  text-white rounded-xl p-2 hover:bg-1Green hover:text-white font-bold sm:w-fit w-full">Reserva ahora</button>
-              </div>
+      <!-- Inicio del contenido -->
+      <div
+        class="md:px-20 p-5 flex gap-5 flex-col justify-center border-4 border-red-500"
+      >
+        <div class="flex flex-col gap-10 rounded-xl">
+          <div
+            id="hero"
+            class="relative rounded-xl flex flex-col justify-end sm:gap-5"
+          >
+            <img
+              class="brightness-75 rounded-xl object-cover w-full"
+              src="/images/Hero.jpg"
+              alt="hero"
+            />
+            <div class="absolute p-5 flex flex-col gap-5">
+              <h1
+                class="z-10 relative text-white text-xl font-bold line sm:text-3xl md:text-4xl lg:text-6xl"
+              >
+                Vive la experiencia de ser
+                <span
+                  class="before:block before:absolute before:-inset-0.5 before:-skew-y-3 before:bg-green-500 relative inline-block"
+                >
+                  <span class="relative text-white">panelero</span>
+                </span>
+                por un día!
+              </h1>
+              <p
+                class="z-10 relative text-white font-semibold text-xs sm:text-2xl md:text-3xl lg:text-4xl sm:font-normal"
+              >
+                "Sumérgete en la tradición panelera colombiana, vive un día como
+                panelero con guía experto y disfruta de un delicioso almuerzo."
+              </p>
+              <button
+                class="z-10 relative bg-green-500 text-xs sm:text-2xl md:text-3xl text-white rounded-xl p-2 hover:bg-1Green hover:text-white font-bold sm:w-fit w-full"
+              >
+                Reserva ahora
+              </button>
+            </div>
           </div>
         </div>
-      
-        
-          
-          
-        <div id="default-carousel" class=" overflow-clip relative rounded-lg md:mb-28 border-green-500 border-4">
-          <div class="relative rounded-lg h-full  md:grid md:grid-cols-4 md:gap-3 sm:justify-between border-4 border-yellow-400">
-              <!-- Item 1 -->
-              <div class="flex-none bg-cover md:flex-none" data-carousel-item>
-                  <img src="/images/iMG1.jpg" class="object-cover md:rounded-lg w-full h-full" alt="...">
-              </div>
-              <!-- Item 2 -->
-              <div class="hidden md:flex-none md:inline-block -translate-y-20 md:translate-y-0" data-carousel-item>
-                  <img src="/images/iMG2.jpg" class="object-cover md:rounded-lg w-full h-full" alt="...">
-              </div>
-              <!-- Item 3 -->
-              <div class="hidden md:flex-none md:inline-block" data-carousel-item>
-                  <img src="/images/img5.jpg" class="object-cover md:rounded-lg w-full h-full -translate-y-36 md:translate-y-0" alt="...">
-              </div>
-              <!-- Item 4 -->
-              <div class="hidden md:flex-none md:inline-block" data-carousel-item>
-                  <img src="/images/Img4.jpg" class="object-cover md:rounded-lg w-full h-full" alt="...">
-              </div>
-          </div>
-      
-          <!-- Slider indicators -->
-          <div class="md:hidden absolute z-30 flex justify-center bottom-5 left-1/2 transform -translate-x-1/2 space-x-3 rtl:space-x-reverse">
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          </div>
-      
-          <!-- Slider controls -->
-          <button type="button" class="md:hidden absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg class="w-4 h-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                  </svg>
-                  <span class="sr-only">Previous</span>
-              </span>
-          </button>
-          <button type="button" class="md:hidden absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg class="w-4 h-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                  </svg>
-                  <span class="sr-only">Next</span>
-              </span>
-          </button>
-      </div>
-      
-      
-      
 
+        <div
+          id="default-carousel"
+          class="h-60 overflow-hidden relative rounded-lg md:mb-28 border-green-500 border-4"
+        >
+          <div
+            class="relative rounded-lg md:grid md:grid-cols-4 md:gap-3 sm:justify-between border-4 border-yellow-400"
+          >
+            <!-- Item 1 -->
+            <div class="flex-none bg-cover md:flex-none" data-carousel-item>
+              <img
+                src="/images/iMG1.jpg"
+                class="object-cover md:rounded-lg"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden md:flex-none md:inline-block -translate-y-20 md:translate-y-0"
+              data-carousel-item
+            >
+              <img
+                src="/images/iMG2.jpg"
+                class="object-cover md:rounded-lg"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden md:flex-none md:inline-block" data-carousel-item>
+              <img
+                src="/images/img5.jpg"
+                class="object-cover md:rounded-lg -translate-y-36 md:translate-y-0"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden md:flex-none md:inline-block" data-carousel-item>
+              <img
+                src="/images/Img4.jpg"
+                class="object-cover md:rounded-lg"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Slider indicators -->
+          <div
+            class="md:hidden absolute z-30 flex justify-center bottom-5 left-1/2 transform -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+          </div>
+
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="md:hidden absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="md:hidden absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
       </div>
-      <footer class="absolute bottom-0 w-full bg-white h-16 flex items-center justify-between p-5 ">
-        <h1 class="text-xs">@2024 Señor Panela. Todos los derechos reservados</h1>
-        </footer>
     </main>
-    
+    <footer
+      class="absolute bottom-0 w-full bg-white h-16 flex items-center justify-between p-5"
+    >
+      <h1 class="text-xs">@2024 Señor Panela. Todos los derechos reservados</h1>
+    </footer>
+    <script src="/app.js"></script>
   </body>
-  <script src="/app.js"></script>
 </html>
