@@ -1001,6 +1001,14 @@ video {
   height: 35vh;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
+.h-\[10em\] {
+  height: 10em;
+}
+
 .max-h-52 {
   max-height: 13rem;
 }
@@ -3366,6 +3374,10 @@ video {
 
   .md\:h-\[50vh\] {
     height: 50vh;
+  }
+
+  .md\:h-\[40vh\] {
+    height: 40vh;
   }
 
   .md\:min-h-80 {
