@@ -7,8 +7,8 @@
     <link href="/src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
-  <body>
-    <main class="bg-1Green bg-opacity-50 relative">
+  <body class="flex flex-col min-h-screen">
+    <main class="bg-1Green bg-opacity-50 flex-grow max-w-7xl mx-auto">
       <nav class="bg-white">
         <div
           class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex items-center h-20"
@@ -62,11 +62,13 @@
             >
               <div class="flex flex-shrink-0 ms-auto sm:ms-0">
                 <img
-                  class="h-16 w-auto"
-                  src="/images/Logo Agro La Sierra Verde Amarillo_20240624_213754_0000.png"
+                  class="h-28 w-auto"
+                  src="/images/Logo trasnparente.png"
                   alt="panela-logo"
                 />
-                <div class="flex flex-col items-center">
+                <div
+                  class="md:flex flex-col items-center justify-center hidden"
+                >
                   <h1 class="text-3xl font-semibold">Señor Panela</h1>
                   <p class="text-xs">Tradición, historia y panela</p>
                 </div>
@@ -130,7 +132,7 @@
             class="relative rounded-xl flex flex-col justify-end sm:gap-5"
           >
             <img
-              class="brightness-75 rounded-xl object-cover w-full"
+              class="brightness-75 rounded-xl object-cover w-full md:h-[40em]"
               src="/images/Hero.jpg"
               alt="hero"
             />
@@ -163,43 +165,52 @@
 
         <div
           id="default-carousel"
-          class="h-60 overflow-hidden relative rounded-lg md:mb-28"
+          class="h-60 md:h-full overflow-hidden relative rounded-lg border-4"
         >
           <div
-            class="relative rounded-lg md:grid md:grid-cols-4 md:gap-3 sm:justify-between"
+            class="relative rounded-lg md:grid md:grid-cols-4 md:gap-3 sm:justify-between h-full"
           >
             <!-- Item 1 -->
-            <div class="flex-none bg-cover md:flex-none" data-carousel-item>
+            <div
+              class="flex-none bg-cover md:flex-none h-full"
+              data-carousel-item
+            >
               <img
                 src="/images/iMG1.jpg"
-                class="object-cover md:rounded-lg"
+                class="object-cover w-full h-full md:rounded-lg"
                 alt="..."
               />
             </div>
             <!-- Item 2 -->
             <div
-              class="hidden md:flex-none md:inline-block -translate-y-20 md:translate-y-0"
+              class="hidden md:flex-none md:inline-block h-full"
               data-carousel-item
             >
               <img
                 src="/images/iMG2.jpg"
-                class="object-cover md:rounded-lg"
+                class="object-cover w-full h-full md:rounded-lg"
                 alt="..."
               />
             </div>
             <!-- Item 3 -->
-            <div class="hidden md:flex-none md:inline-block" data-carousel-item>
+            <div
+              class="hidden md:flex-none md:inline-block h-full"
+              data-carousel-item
+            >
               <img
                 src="/images/img5.jpg"
-                class="object-cover md:rounded-lg -translate-y-36 md:translate-y-0"
+                class="object-cover w-full h-full md:rounded-lg"
                 alt="..."
               />
             </div>
             <!-- Item 4 -->
-            <div class="hidden md:flex-none md:inline-block" data-carousel-item>
+            <div
+              class="hidden md:flex-none md:inline-block h-full"
+              data-carousel-item
+            >
               <img
                 src="/images/Img4.jpg"
-                class="object-cover md:rounded-lg"
+                class="object-cover w-full h-full md:rounded-lg"
                 alt="..."
               />
             </div>
@@ -211,95 +222,96 @@
           >
             <button
               type="button"
-              class="w-3 h-3 rounded-full"
+              class="w-3 h-3 rounded-full bg-white/50"
               aria-current="true"
               aria-label="Slide 1"
               data-carousel-slide-to="0"
             ></button>
             <button
               type="button"
-              class="w-3 h-3 rounded-full"
+              class="w-3 h-3 rounded-full bg-white/50"
               aria-current="false"
               aria-label="Slide 2"
               data-carousel-slide-to="1"
             ></button>
             <button
               type="button"
-              class="w-3 h-3 rounded-full"
+              class="w-3 h-3 rounded-full bg-white/50"
               aria-current="false"
               aria-label="Slide 3"
               data-carousel-slide-to="2"
             ></button>
             <button
               type="button"
-              class="w-3 h-3 rounded-full"
+              class="w-3 h-3 rounded-full bg-white/50"
               aria-current="false"
               aria-label="Slide 4"
               data-carousel-slide-to="3"
             ></button>
           </div>
-
           <!-- Slider controls -->
           <button
             type="button"
-            class="md:hidden absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            class="md:hidden absolute top-1/2 left-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
             data-carousel-prev
           >
             <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none transform -translate-y-1/2"
             >
               <svg
-                class="w-4 h-4 rtl:rotate-180"
                 aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-white"
                 fill="none"
-                viewBox="0 0 6 10"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M5 1 1 5l4 4"
-                />
+                  d="M15 19l-7-7 7-7"
+                ></path>
               </svg>
               <span class="sr-only">Previous</span>
             </span>
           </button>
           <button
             type="button"
-            class="md:hidden absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            class="md:hidden absolute top-1/2 right-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
             data-carousel-next
           >
             <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none transform -translate-y-1/2"
             >
               <svg
-                class="w-4 h-4 rtl:rotate-180"
                 aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-white"
                 fill="none"
-                viewBox="0 0 6 10"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="m1 9 4-4-4-4"
-                />
+                  d="M9 5l7 7-7 7"
+                ></path>
               </svg>
               <span class="sr-only">Next</span>
             </span>
           </button>
         </div>
       </div>
+
+      <!-- Fin del contenido -->
     </main>
-    <footer
-      class="absolute bottom-0 w-full bg-white h-16 flex items-center justify-between p-5"
-    >
-      <h1 class="text-xs">@2024 Señor Panela. Todos los derechos reservados</h1>
+    <footer class="bg-white h-16 flex items-center justify-center">
+      <!-- Contenido del footer -->
+      <p>Este es el footer que debe estar siempre al final</p>
     </footer>
+
     <script src="/app.js"></script>
   </body>
 </html>
