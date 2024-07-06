@@ -16,7 +16,15 @@ function showSlide(index) {
     item.classList.toggle("hidden", i !== index);
   });
   indicators.forEach((indicator, i) => {
-    indicator.setAttribute("aria-current", i === index);
+    if (i === index) {
+      indicator.setAttribute("aria-current", "true");
+      indicator.classList.add("bg-green-500");
+      indicator.classList.remove("bg-white/50");
+    } else {
+      indicator.setAttribute("aria-current", "false");
+      indicator.classList.remove("bg-green-500");
+      indicator.classList.add("bg-white/50");
+    }
   });
   currentIndex = index;
 }
