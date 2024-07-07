@@ -3047,6 +3047,10 @@ video {
     margin-inline-start: 0px;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -3107,6 +3111,10 @@ video {
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:col-auto {
+    grid-column: auto;
   }
 
   .md\:row-auto {
@@ -3186,6 +3194,10 @@ video {
 
   .md\:flex-col {
     flex-direction: column;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:justify-evenly {
