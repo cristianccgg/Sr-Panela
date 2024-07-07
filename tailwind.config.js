@@ -9,6 +9,9 @@ module.exports = {
       fontSize: {
         xxs: "0.5rem",
       },
+      backgroundImage: {
+        background: "url('/images/Diseño sin título (1).png')",
+      },
     },
   },
   plugins: [],

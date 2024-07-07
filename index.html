@@ -169,8 +169,12 @@
         
         Inicio de video-->
 
-        <div class="md:grid-cols-2 md:grid md:items-center md:h-96">
-          <h1 class="hidden sm:block md:col-auto-auto text-4xl text-center">Descubre la magia del dulce sabor de la panela en Señor Panela</h1>
+        <div class="md:grid-cols-2 md:grid md:items-center md:h-96 md:bg-background md:bg-contain md:gap-5">
+          <span
+                class="hidden before:block before:absolute before:-inset-0.5 before:-skew-y-3 before:bg-green-500 relative md:inline-block h-32"
+              >
+            <h1 class="hidden sm:block md:col-auto-auto text-4xl text-center font-bold text-white absolute -skew-y-3">Descubre la magia del dulce sabor de la panela en Señor Panela</h1>
+          </span>
           <div class="relative h-60 md:h-96 rounded-lg overflow-hidden md:col-auto">
           
             <video poster="/images/miniatura-video.jpg" class=" absolute top-0 left-0 w-full h-full object-cover rounded-lg " src="/video/SaveInsta.App - 3393165830713990735.mp4" type="video/mp4" controls></video>
@@ -185,14 +189,14 @@
 
         <div
           id="testimonio-carousel"
-          class="h-60 md:h-full overflow-hidden relative rounded-lg bg-green-500 md:bg-transparent"
+          class="h-60 md:h-96  overflow-hidden relative rounded-lg bg-green-500 md:bg-transparent"
         >
           <div
-            class="relative rounded-lg md:grid md:grid-cols-2 md:gap-3 sm:justify-between h-full"
+            class="relative rounded-lg  md:gap-3 sm:justify-between h-full"
           >
             <!-- Item 1 -->
             <div
-              class="flex flex-col items-center py-5 px-12 rounded-xl gap-2 relative bg-green-500"
+              class="flex flex-col items-center py-5 px-12 md:h-full rounded-xl gap-2 relative bg-green-500"
               data-testimonio-item
             >
               <i
@@ -222,7 +226,7 @@
             </div>
             <!-- Item 2 -->
             <div
-              class="hidden flex flex-col md:flex items-center py-5 px-12 rounded-xl gap-2 relative bg-green-500"
+              class="hidden flex flex-col  items-center py-5 px-12 md:h-full  rounded-xl gap-2 relative bg-green-500"
               data-testimonio-item
             >
               <i
@@ -254,7 +258,7 @@
 
           <!-- Slider indicators -->
           <div
-            class="md:hidden absolute z-30 flex justify-center bottom-5 left-1/2 transform -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+            class="absolute z-30 flex justify-center bottom-5 left-1/2 transform -translate-x-1/2 space-x-3 rtl:space-x-reverse"
           >
             <button
               type="button"
@@ -274,7 +278,7 @@
           <!-- Slider controls -->
           <button
             type="button"
-            class="md:hidden absolute top-1/2 left-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
+            class=" absolute top-1/2 left-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
             data-testimonio-carousel-prev
           >
             <span
@@ -300,7 +304,7 @@
           </button>
           <button
             type="button"
-            class="md:hidden absolute top-1/2 right-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
+            class="absolute top-1/2 right-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
             data-testimonio-carousel-next
           >
             <span
