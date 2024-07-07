@@ -1,0 +1,11 @@
+.video-container {
+  overflow: hidden;
+}
+
+.video-small {
+  height: 20rem; /* h-24 */
+}
+
+.video-expanded {
+  height: 24rem; /* h-96 */
+}
