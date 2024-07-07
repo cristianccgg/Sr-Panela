@@ -12,7 +12,7 @@
     />
   </head>
   <body class="flex flex-col min-h-screen">
-    <main class="bg-1Green bg-opacity-50 flex-grow max-w-7xl mx-auto">
+    <main class="bg-white bg-opacity-50 flex-grow max-w-7xl mx-auto">
       <nav class="bg-white">
         <div
           class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex items-center h-20"
@@ -128,44 +128,42 @@
       <!-- Fin del navBar -->
 
       <!-- Inicio del contenido -->
-      <div class="md:px-20 p-5 flex gap-5 flex-col justify-center">
-        <div class="flex flex-col gap-10 rounded-xl">
-          <div
-            id="hero"
-            class="relative rounded-xl flex flex-col justify-end sm:gap-5"
-          >
+      <div class="flex flex-col gap-10">
+        <div id="hero" class="relative flex flex-col justify-end sm:gap-5">
+          <div class="w-full h-52 md:h-[30em] overflow-hidden">
             <img
-              class="brightness-75 rounded-xl object-cover w-full md:h-[40em]"
+              class="brightness-75 object-cover md:-translate-y-20"
               src="/images/Hero.jpg"
               alt="hero"
             />
-            <div class="absolute p-5 flex flex-col gap-5">
-              <h1
-                class="z-10 relative text-white text-xl font-bold line sm:text-3xl md:text-4xl lg:text-6xl"
+          </div>
+          <div class="absolute p-5 flex flex-col gap-5">
+            <h1
+              class="z-10 relative text-white text-xl font-bold line sm:text-3xl md:text-4xl lg:text-6xl"
+            >
+              Vive la experiencia de ser
+              <span
+                class="before:block before:absolute before:-inset-0.5 before:-skew-y-3 before:bg-green-500 relative inline-block"
               >
-                Vive la experiencia de ser
-                <span
-                  class="before:block before:absolute before:-inset-0.5 before:-skew-y-3 before:bg-green-500 relative inline-block"
-                >
-                  <span class="relative text-white">panelero</span>
-                </span>
-                por un día!
-              </h1>
-              <p
-                class="z-10 relative text-white font-semibold text-xs sm:text-2xl md:text-3xl lg:text-4xl sm:font-normal"
-              >
-                "Sumérgete en la tradición panelera colombiana, vive un día como
-                panelero con guía experto y disfruta de un delicioso almuerzo."
-              </p>
-              <button
-                class="z-10 relative bg-green-500 text-xs sm:text-2xl md:text-3xl text-white rounded-xl p-2 hover:bg-1Green hover:text-white font-semibold sm:w-fit w-full"
-              >
-                <a href="planes.html">Conoce nuestros planes</a>
-              </button>
-            </div>
+                <span class="relative text-white">panelero</span>
+              </span>
+              por un día!
+            </h1>
+            <p
+              class="z-10 relative text-white font-semibold text-xs sm:text-2xl md:text-3xl lg:text-4xl sm:font-normal"
+            >
+              "Sumérgete en la tradición panelera colombiana, vive un día como
+              panelero con guía experto y disfruta de un delicioso almuerzo."
+            </p>
+            <button
+              class="mx-auto z-10 relative bg-green-500 text-xs sm:text-2xl md:text-3xl text-white rounded-xl p-2 hover:bg-1Green hover:text-white font-semibold sm:w-fit w-full"
+            >
+              <a href="planes.html">Conoce nuestros planes</a>
+            </button>
           </div>
         </div>
-
+      </div>
+      <div class="md:px-20 p-5 flex gap-5 flex-col justify-center">
         <!-- Findel hero
          
         Inicio del carrusel de testimonio -->
