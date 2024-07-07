@@ -127,15 +127,15 @@
       <!-- Fin del navBar -->
 
       <!-- Inicio del contenido -->
-      <div class="md:px-20 flex flex-col justify-center">
-            <div class="flex flex-col gap-5 rounded-xl">
+      
+            <div class="flex flex-col gap-5 ">
                 <div
                     id="hero"
                     class="relative rounded-xl flex flex-col justify-center sm:gap-5"
                 >
-                    <div class="w-full h-32 md:h-[20em] overflow-hidden ">
+                    <div class="w-full h-32 md:h-[20em] overflow-hidden">
                       <img
-                      class="brightness-75 object-cover -translate-y-40 md:-translate-y-96 "
+                      class="brightness-75 object-cover -translate-y-40 md:-translate-y-96 w-full"
                       src="/images/melcocha en plato.jpg"
                       alt="hero"
                       />
@@ -154,13 +154,13 @@
                     </h1>
                     </div>
                 </div>
-                <h1 class="text-center text-green-500 font-bold text-xl">
+                <h1 class="text-center text-green-500 font-bold text-xl md:text-4xl">
                     Nuestros Planes
                 </h1>
-                <div class="px-5 flex flex-col gap-5 mb-5">
-                    <div>
-                        <div class="h-44 overflow-hidden rounded-t-lg "><img class=" object-cover " src="/images/panela.jpg" alt="melcocha-img"></div>
-                        <div class="bg-green-500 rounded-b-lg p-5 text-white space-y-1 font-semibold">
+                <div class="px-5 flex flex-col gap-5 mb-5 md:px-20 md:grid md:grid-rows-3">
+                    <div class="md:grid md:grid-cols-3 md:row-auto md:h-96 ">
+                        <div class="md:rounded-r-lg md:rounded-l-none md:col-span-2 md:order-2 h-44 md:h-full overflow-hidden rounded-t-lg "><img class=" object-cover " src="/images/panela.jpg" alt="melcocha-img"></div>
+                        <div class="md:flex md:flex-col md:justify-evenly md:rounded-r-none md:rounded-l-lg bg-green-500 rounded-b-lg p-5 text-white space-y-1 font-semibold ">
                         <h1 class="text-center text-xl font-bold">Plan 1</h1>
                         <ol class="list-disc p-4">
                           <li>Refrigerio Palitos de Caña</li>
@@ -170,39 +170,39 @@
                           <li>Almuerzo Campesino</li>
                           <li>Transporte ida y vuelta desde San Sabastian de Mariquita</li>
                           <li>Costo: $75.000</li>
-                        </ol>
-                        
-                        
+                        </ol>                     
                         <button class="bg-black text-white font-semibold px-2 py-1 rounded-full w-full">Reservar</button>
                         </div>
                     </div>
-                    <div>
-                        <div class="h-44 overflow-hidden rounded-t-lg "><img class=" object-cover -translate-y-64" src="/images/melcocha.jpg" alt="melcocha-img"></div>
-                        <div class="bg-green-500 rounded-b-lg p-5 text-white space-y-1 font-semibold">
-                        <h1 class="text-center text-xl font-bold">Plan 2 (No incluye transporte)</h1>
-                        <ol class="list-disc p-4">
-                          <li>Refrigerio Palitos de Caña</li>
-                          <li>Historia Panelera</li>
-                          <li>Siembra de Caña en Terreno</li>
-                          <li>Guía, explicacion y aplicación de la molienda panelera</li>
-                          <li>Almuerzo Campesino</li>
-                          <li>Costo: $65.000</li>
-                        </ol>
-                        <button class="bg-black text-white font-semibold px-2 py-1 rounded-full w-full">Reservar</button>
-                        </div>
+                    <div class="md:grid md:grid-cols-3 md:row-auto md:h-96">
+                      <div class="md:rounded-r-lg md:rounded-l-none md:col-span-2 md:order-2 h-44 md:h-full overflow-hidden rounded-t-lg "><img class=" object-cover -translate-y-60 md:-translate-y-96" src="/images/melcocha.jpg" alt="melcocha-img"></div>
+                      <div class="md:flex md:flex-col md:justify-evenly md:rounded-r-none md:rounded-l-lg bg-green-500 rounded-b-lg p-5 text-white space-y-1 font-semibold ">
+                      <h1 class="text-center text-xl font-bold">Plan 2 (No incluye transporte)</h1>
+                      <ol class="list-disc p-4 ">
+                        <li>Refrigerio Palitos de Caña</li>
+                        <li>Historia Panelera</li>
+                        <li>Siembra de Caña en Terreno</li>
+                        <li>Guía, explicacion y aplicación de la molienda panelera</li>
+                        <li>Almuerzo Campesino</li>
+                        <li>Costo: $75.000</li>
+                      </ol>                     
+                      <button class="bg-black text-white font-semibold px-2 py-1 rounded-full w-full">Reservar</button>
+                      </div>
+                  </div>
+                  <div class="md:grid md:grid-cols-3 md:row-auto md:h-96 overflow-hidden">
+                    <div class="md:rounded-r-lg md:rounded-l-none md:col-span-2 md:order-2 h-44 md:h-fit overflow-hidden rounded-t-lg "><img class=" object-cover -translate-y-52 md:-translate-y-96" src="/images/img3.jpg" alt="melcocha-img"></div>
+                    <div class="md:flex md:flex-col md:justify-evenly md:h-full md:rounded-r-none md:rounded-l-lg bg-green-500 rounded-b-lg p-5 text-white space-y-1 font-semibold ">
+                    <h1 class="text-center text-xl font-bold flex flex-col items-center">Niños menores de 12 años <span>(Solo pagan almuerzo)</span></h1>
+                    <ol class="list-disc p-4">
+                      
+                      <li>Transporte ida y vuelta desde San Sabastian de Mariquita</li>
+                      <li>Costo: $75.000</li>
+                    </ol>                     
+                    <button class="bg-black text-white font-semibold px-2 py-1 rounded-full w-full">Reservar</button>
                     </div>
-                    <div>
-                        <div class="h-44 overflow-hidden rounded-t-lg "><img class=" object-cover -translate-y-44" src="/images/img3.jpg" alt="melcocha-img"></div>
-                        <div class="bg-green-500 rounded-b-lg p-5 text-white space-y-1 font-semibold">
-                        <h1 class="text-center text-xl font-bold">Menores de 12 años</h1>
-                        <ol class="list-disc p-4">
-                          <li> Solo pagan Almuezo</li>
-                          <li> Incluye toda la experiencia panelera</li>
-                          <li>Costo: $15.000</li>
-                        </ol>
-                        <button class="bg-black text-white font-semibold px-2 py-1 rounded-full w-full">Reservar</button>
-                        </div>
-                    </div>
+                </div>
+                    
+                    
                 </div>
             </div>
       </div>
