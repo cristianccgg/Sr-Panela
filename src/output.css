@@ -3387,6 +3387,10 @@ video {
     padding-right: 6rem;
   }
 
+  .md\:pe-0 {
+    padding-inline-end: 0px;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
